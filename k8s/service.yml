@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ting
+  name: dicd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "ting"
+  - name: "dicd"
     port: 8080
   selector:
-    app: ting
+    app: dicd
