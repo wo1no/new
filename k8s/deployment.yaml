@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.azmovies.net"
         - name: Vless_UUID
           value: "4666ee1e-26e3-430a-98f0-3b340390ac46"
         - name: Vless_Path
