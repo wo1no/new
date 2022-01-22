@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: toto
+  name: popo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: toto
+      app: popo
   template:
     metadata:
       labels:
-        app: toto
+        app: popo
     spec:
       containers:
-      - image: okteto.dev/toto:latest
-        name: toto
+      - image: okteto.dev/popo:latest
+        name: popo
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "moviesjoy.to"
         - name: Vless_UUID
-          value: "f36925e8-d0f3-4953-b8fa-f25d9721ed2b"
+          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vless_Path
-          value: "/SvMm233"
+          value: "/SvMm244233"
         - name: Vmess_UUID
-          value: "f36925e8-d0f3-4953-b8fa-f25d9721ed2b"
+          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vmess_Path
-          value: "/SvMm244"
+          value: "/SvMm244244"
         - name: Share_Path
           value: "/share233"
