@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: like
+  name: boss
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: like
+      app: boss
   template:
     metadata:
       labels:
-        app: like
+        app: boss
     spec:
       containers:
-      - image: okteto.dev/like:latest
-        name: like
+      - image: okteto.dev/boss:latest
+        name: boss
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "4666ee1e-26e3-430a-98f0-3b340390ac46"
+          value: "2971e247-3b53-4acd-8372-f120323d4dc4"
         - name: Vless_Path
           value: "/SvMm244233"
         - name: Vmess_UUID
-          value: "4666ee1e-26e3-430a-98f0-3b340390ac46"
+          value: "2971e247-3b53-4acd-8372-f120323d4dc4"
         - name: Vmess_Path
           value: "/SvMm244244"
         - name: Share_Path
