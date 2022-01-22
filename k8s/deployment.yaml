@@ -13,7 +13,7 @@ spec:
         app: toto
     spec:
       containers:
-      - image: okteto.dev/ray:latest
+      - image: okteto.dev/toto:latest
         name: toto
         ports:
         - containerPort: 8080
@@ -21,14 +21,14 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mirror.umd.edu"
+          value: "icook.tw"
         - name: Vless_UUID
-          value: "599061e7-a2da-4c3b-a017-9066c3f87872"
+          value: "f36925e8-d0f3-4953-b8fa-f25d9721ed2b"
         - name: Vless_Path
           value: "/s233"
         - name: Vmess_UUID
-          value: "599061e7-a2da-4c3b-a017-9066c3f87872"
+          value: "f36925e8-d0f3-4953-b8fa-f25d9721ed2b"
         - name: Vmess_Path
-          value: "/s244"
+          value: "/svmm244"
         - name: Share_Path
           value: "/share233"
