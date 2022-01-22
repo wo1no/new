@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "moviesjoy.to"
+          value: "icook.tw"
         - name: Vless_UUID
           value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vless_Path
