@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: boss
+  name: ting
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: boss
+      app: ting
   template:
     metadata:
       labels:
-        app: boss
+        app: ting
     spec:
       containers:
-      - image: okteto.dev/boss:latest
-        name: boss
+      - image: okteto.dev/ting:latest
+        name: ting
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "2971e247-3b53-4acd-8372-f120323d4dc4"
+          value: "e363d6aa-6474-4e50-8bbf-3c07ba3ce145"
         - name: Vless_Path
           value: "/SvMm244233"
         - name: Vmess_UUID
-          value: "2971e247-3b53-4acd-8372-f120323d4dc4"
+          value: "e363d6aa-6474-4e50-8bbf-3c07ba3ce145"
         - name: Vmess_Path
           value: "/SvMm244244"
         - name: Share_Path
