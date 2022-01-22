@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ting
+  name: dicd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ting
+      app: dicd
   template:
     metadata:
       labels:
-        app: ting
+        app: dicd
     spec:
       containers:
-      - image: okteto.dev/ting:latest
-        name: ting
+      - image: okteto.dev/dicd:latest
+        name: dicd
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "e363d6aa-6474-4e50-8bbf-3c07ba3ce145"
+          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vless_Path
           value: "/SvMm244233"
         - name: Vmess_UUID
-          value: "e363d6aa-6474-4e50-8bbf-3c07ba3ce145"
+          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
         - name: Vmess_Path
           value: "/SvMm244244"
         - name: Share_Path
