@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dicd
+  name: meuz
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dicd
+      app: meuz
   template:
     metadata:
       labels:
-        app: dicd
+        app: meuz
     spec:
       containers:
-      - image: okteto.dev/dicd:latest
-        name: dicd
+      - image: okteto.dev/meuz:latest
+        name: meuz
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "icook.tw"
         - name: Vless_UUID
-          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
+          value: "b678e32b-aecb-4b68-8079-9417f13f9c51"
         - name: Vless_Path
           value: "/SvMm244233"
         - name: Vmess_UUID
-          value: "3cd9ed1e-7217-417d-92aa-7afa37f26ec2"
+          value: "b678e32b-aecb-4b68-8079-9417f13f9c51"
         - name: Vmess_Path
           value: "/SvMm244244"
         - name: Share_Path
