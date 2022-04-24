@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: meuz
+  name: vivo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: meuz
+      app: vivo
   template:
     metadata:
       labels:
-        app: meuz
+        app: vivo
     spec:
       containers:
-      - image: okteto.dev/meuz:latest
-        name: meuz
+      - image: okteto.dev/vivo:latest
+        name: vivo
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "b678e32b-aecb-4b68-8079-9417f13f9c51"
+          value: "d1eefea9-583e-4db7-8368-0d20b476118c"
         - name: Vless_Path
-          value: "/SvMm244233"
+          value: "/yonr242465"
         - name: Vmess_UUID
-          value: "b678e32b-aecb-4b68-8079-9417f13f9c51"
+          value: "d1eefea9-583e-4db7-8368-0d20b476118c"
         - name: Vmess_Path
-          value: "/SvMm244244"
+          value: "/womef2f2332"
         - name: Share_Path
           value: "/share233"
