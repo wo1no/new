@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: les
+  name: note
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: les
+      app: note
   template:
     metadata:
       labels:
-        app: les
+        app: note
     spec:
       containers:
-      - image: okteto.dev/les:latest
-        name: les
+      - image: okteto.dev/note:latest
+        name: note
         ports:
         - containerPort: 8080
         env:
