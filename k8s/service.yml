@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: day
+  name: bsy
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "day"
+  - name: "bsy"
     port: 8080
   selector:
-    app: day
+    app: bsy
