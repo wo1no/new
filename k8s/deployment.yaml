@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: day
+  name: bsy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: day
+      app: bsy
   template:
     metadata:
       labels:
-        app: day
+        app: bsy
     spec:
       containers:
-      - image: okteto.dev/day:latest
-        name: day
+      - image: okteto.dev/bsy:latest
+        name: bsy
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "173f770b-dfb5-4002-87c4-5d610f44c269"
+          value: "4c6d2eac-c92a-48d8-ac4b-8d14bdafc601"
         - name: Vless_Path
-          value: "/8ujmkio"
+          value: "/7593rjef"
         - name: Vmess_UUID
-          value: "173f770b-dfb5-4002-87c4-5d610f44c269"
+          value: "4c6d2eac-c92a-48d8-ac4b-8d14bdafc601"
         - name: Vmess_Path
-          value: "/5yhnbvt"
+          value: "/876y5rd"
         - name: Share_Path
           value: "/share233"
