@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dell
+  name: mdd
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dell"
+  - name: "mdd"
     port: 8080
   selector:
-    app: dell
+    app: mdd
