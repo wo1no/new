@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dell
+  name: mdd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dell
+      app: mdd
   template:
     metadata:
       labels:
-        app: dell
+        app: mdd
     spec:
       containers:
-      - image: okteto.dev/dell:latest
-        name: dell
+      - image: okteto.dev/mdd:latest
+        name: mdd
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "a4ee2fd1-8b47-4563-bb68-2945d58a8939"
+          value: "87249ba9-5a8e-47ed-8941-769d0ba966d7"
         - name: Vless_Path
-          value: "/Nou85ds"
+          value: "/U8ojs3"
         - name: Vmess_UUID
-          value: "a4ee2fd1-8b47-4563-bb68-2945d58a8939"
+          value: "87249ba9-5a8e-47ed-8941-769d0ba966d7"
         - name: Vmess_Path
-          value: "/B9fs34d"
+          value: "/Yvs353"
         - name: Share_Path
           value: "/share233"
