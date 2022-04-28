@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: asus
+  name: doov
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: asus
+      app: doov
   template:
     metadata:
       labels:
-        app: asus
+        app: doov
     spec:
       containers:
-      - image: okteto.dev/asus:latest
-        name: asus
+      - image: okteto.dev/doov:latest
+        name: doov
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "946986b2-6f3e-4279-bb62-99b1a4a2b1c6"
+          value: "21325332-6668-4b96-a027-a046cfd413b7"
         - name: Vless_Path
-          value: "/79tg3sg3"
+          value: "/nu89rfs"
         - name: Vmess_UUID
-          value: "946986b2-6f3e-4279-bb62-99b1a4a2b1c6"
+          value: "21325332-6668-4b96-a027-a046cfd413b7"
         - name: Vmess_Path
-          value: "/63wrfede3"
+          value: "/64tefdf"
         - name: Share_Path
           value: "/share233"
