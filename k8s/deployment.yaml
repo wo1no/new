@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sam
+  name: asus
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sam
+      app: asus
   template:
     metadata:
       labels:
-        app: sam
+        app: asus
     spec:
       containers:
-      - image: okteto.dev/sam:latest
-        name: sam
+      - image: okteto.dev/asus:latest
+        name: asus
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "104f5bd7-74d1-41a9-97aa-565d9c37e550"
+          value: "946986b2-6f3e-4279-bb62-99b1a4a2b1c6"
         - name: Vless_Path
-          value: "/56y93the"
+          value: "/79tg3sg3"
         - name: Vmess_UUID
-          value: "104f5bd7-74d1-41a9-97aa-565d9c37e550"
+          value: "946986b2-6f3e-4279-bb62-99b1a4a2b1c6"
         - name: Vmess_Path
-          value: "/75ergd"
+          value: "/63wrfede3"
         - name: Share_Path
           value: "/share233"
