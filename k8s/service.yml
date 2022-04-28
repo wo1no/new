@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: zte
+  name: sam
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "zte"
+  - name: "sam"
     port: 8080
   selector:
-    app: zte
+    app: sam
