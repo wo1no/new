@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: koo
+  name: hdc
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: koo
+      app: hdc
   template:
     metadata:
       labels:
-        app: koo
+        app: hdc
     spec:
       containers:
-      - image: okteto.dev/koo:latest
-        name: koo
+      - image: okteto.dev/hdc:latest
+        name: hdc
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "8081b222-00bb-4009-85f5-41326290737d"
+          value: "af6878f7-d002-4cf7-b9f3-964259d26b7c"
         - name: Vless_Path
-          value: "/0okmnj"
+          value: "/Suon9gs"
         - name: Vmess_UUID
-          value: "8081b222-00bb-4009-85f5-41326290737d"
+          value: "af6878f7-d002-4cf7-b9f3-964259d26b7c"
         - name: Vmess_Path
-          value: "/7yerd"
+          value: "/M90jfs3"
         - name: Share_Path
           value: "/share233"
