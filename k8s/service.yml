@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: asus
+  name: doov
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "asus"
+  - name: "doov"
     port: 8080
   selector:
-    app: asus
+    app: doov
