@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hua
+  name: tcl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hua
+      app: tcl
   template:
     metadata:
       labels:
-        app: hua
+        app: tcl
     spec:
       containers:
-      - image: okteto.dev/hua:latest
-        name: hua
+      - image: okteto.dev/tcl:latest
+        name: tcl
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "2b1aca81-f667-43ca-983c-b46ada60a866"
+          value: "96ae859e-be0c-41ab-9e4f-ac8b2efd08bc"
         - name: Vless_Path
-          value: "/6ujntw3w"
+          value: "/56yhb8yuh"
         - name: Vmess_UUID
-          value: "2b1aca81-f667-43ca-983c-b46ada60a866"
+          value: "96ae859e-be0c-41ab-9e4f-ac8b2efd08bc"
         - name: Vmess_Path
-          value: "/76t3weff3"
+          value: "/34657gkj"
         - name: Share_Path
           value: "/share233"
