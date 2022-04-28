@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: inq
+  name: hty
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: inq
+      app: hty
   template:
     metadata:
       labels:
-        app: inq
+        app: hty
     spec:
       containers:
-      - image: okteto.dev/inq:latest
-        name: inq
+      - image: okteto.dev/hty:latest
+        name: hty
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "6e6057fc-862e-4b04-b6fd-0ef9c7ec553f"
+          value: "fc22b800-cd83-47dd-aa10-b8ba596a9968"
         - name: Vless_Path
-          value: "/No9w3gd"
+          value: "/Mo08js"
         - name: Vmess_UUID
-          value: "6e6057fc-862e-4b04-b6fd-0ef9c7ec553f"
+          value: "fc22b800-cd83-47dd-aa10-b8ba596a9968"
         - name: Vmess_Path
-          value: "/F68rfee"
+          value: "/Shgd4v"
         - name: Share_Path
           value: "/share233"
