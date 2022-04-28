@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: popo
+  name: hua
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: popo
+      app: hua
   template:
     metadata:
       labels:
-        app: popo
+        app: hua
     spec:
       containers:
-      - image: okteto.dev/popo:latest
-        name: popo
+      - image: okteto.dev/hua:latest
+        name: hua
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "88742f02-aa98-431d-baaf-f748434c46f7"
+          value: "2b1aca81-f667-43ca-983c-b46ada60a866"
         - name: Vless_Path
-          value: "/7irfsrfs2"
+          value: "/6ujntw3w"
         - name: Vmess_UUID
-          value: "88742f02-aa98-431d-baaf-f748434c46f7"
+          value: "2b1aca81-f667-43ca-983c-b46ada60a866"
         - name: Vmess_Path
-          value: "/54twefd"
+          value: "/76t3weff3"
         - name: Share_Path
           value: "/share233"
