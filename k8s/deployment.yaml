@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: not
+  name: zte
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: not
+      app: zte
   template:
     metadata:
       labels:
-        app: not
+        app: zte
     spec:
       containers:
-      - image: okteto.dev/not:latest
-        name: not
+      - image: okteto.dev/zte:latest
+        name: zte
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "63007f89-6268-40aa-be86-38267ef5b9e7"
+          value: "ea5c057d-2eb9-46e6-930e-027c2e79ea7d"
         - name: Vless_Path
-          value: "/6ojlnriyh"
+          value: "/24rdv5tws"
         - name: Vmess_UUID
-          value: "63007f89-6268-40aa-be86-38267ef5b9e7"
+          value: "ea5c057d-2eb9-46e6-930e-027c2e79ea7d"
         - name: Vmess_Path
-          value: "/4rtghn8"
+          value: "/09kujyhr"
         - name: Share_Path
           value: "/share233"
