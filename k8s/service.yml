@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hua
+  name: tcl
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hua"
+  - name: "tcl"
     port: 8080
   selector:
-    app: hua
+    app: tcl
