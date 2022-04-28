@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: hot
+  name: voto
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "hot"
+  - name: "voto"
     port: 8080
   selector:
-    app: hot
+    app: voto
