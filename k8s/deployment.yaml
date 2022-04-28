@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: voto
+  name: dell
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: voto
+      app: dell
   template:
     metadata:
       labels:
-        app: voto
+        app: dell
     spec:
       containers:
-      - image: okteto.dev/voto:latest
-        name: voto
+      - image: okteto.dev/dell:latest
+        name: dell
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "82a05895-de28-46cd-8e2b-0f8f38c3a190"
+          value: "a4ee2fd1-8b47-4563-bb68-2945d58a8939"
         - name: Vless_Path
-          value: "/Dyrnfs6"
+          value: "/Nou85ds"
         - name: Vmess_UUID
-          value: "82a05895-de28-46cd-8e2b-0f8f38c3a190"
+          value: "a4ee2fd1-8b47-4563-bb68-2945d58a8939"
         - name: Vmess_Path
-          value: "/Fu8met2"
+          value: "/B9fs34d"
         - name: Share_Path
           value: "/share233"
