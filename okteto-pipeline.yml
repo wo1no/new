@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/asus:latest
+  - okteto build -t okteto.dev/doov:latest
   - kubectl apply -f k8s
