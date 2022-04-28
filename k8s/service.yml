@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: doov
+  name: lme
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "doov"
+  - name: "lme"
     port: 8080
   selector:
-    app: doov
+    app: lme
