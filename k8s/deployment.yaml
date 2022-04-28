@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: lg
+  name: bow
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: lg
+      app: bow
   template:
     metadata:
       labels:
-        app: lg
+        app: bow
     spec:
       containers:
-      - image: okteto.dev/lg:latest
-        name: lg
+      - image: okteto.dev/bow:latest
+        name: bow
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "971d93af-efb9-47ca-a8ab-e4d118d13a82"
+          value: "b115ac00-5d8d-41d7-9ac3-1ee1bb5c2ee7"
         - name: Vless_Path
-          value: "/83wejfd"
+          value: "/6793edfs"
         - name: Vmess_UUID
-          value: "971d93af-efb9-47ca-a8ab-e4d118d13a82"
+          value: "b115ac00-5d8d-41d7-9ac3-1ee1bb5c2ee7"
         - name: Vmess_Path
-          value: "/234rfs"
+          value: "/23edvt3w"
         - name: Share_Path
           value: "/share233"
