@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: doov
+  name: lme
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: doov
+      app: lme
   template:
     metadata:
       labels:
-        app: doov
+        app: lme
     spec:
       containers:
-      - image: okteto.dev/doov:latest
-        name: doov
+      - image: okteto.dev/lme:latest
+        name: lme
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "21325332-6668-4b96-a027-a046cfd413b7"
+          value: "c2cc4c2d-c0fd-4cd2-bb13-1c317c052800"
         - name: Vless_Path
-          value: "/nu89rfs"
+          value: "/679thwend"
         - name: Vmess_UUID
-          value: "21325332-6668-4b96-a027-a046cfd413b7"
+          value: "c2cc4c2d-c0fd-4cd2-bb13-1c317c052800"
         - name: Vmess_Path
-          value: "/64tefdf"
+          value: "/764efdew"
         - name: Share_Path
           value: "/share233"
